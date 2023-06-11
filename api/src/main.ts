@@ -11,7 +11,7 @@ async function bootstrap() {
     .setVersion('0.0.1')
     .addTag('EveryWhere')
     .addBearerAuth()
-    // .addServer('/api')
+    .addServer('/api')
     .build();
   const document =  SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
