@@ -20,7 +20,7 @@ export class MembreController {
         return this.membreService.findById(donnees);
     }
 
-    @Get('prenom_usuel=:prenomUsuel')
+    @Get('prenom-usuel=:prenomUsuel')
     findByPrenomUsuelMembre(@Param() donnees: MembrePrenomUsuelDto) {
         if(!donnees.hasOwnProperty('prenomUsuel'))
             throw new NotAcceptableException('Credentials incorrects!');
