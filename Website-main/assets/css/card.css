@@ -1,0 +1,96 @@
+/*______________Responsivity Position Card______________*/
+@media screen and (max-width: 767px){
+        .team-ui{
+            margin-top: 12% !important; 
+		}
+		.team-back{
+            margin-top: 12% !important; 
+		}
+		.team-exp{
+            margin-top: 12% !important; 
+        }
+}
+
+@media screen and (max-width: 991px){
+	.team-back{
+		margin-top: 10% !important; 
+	}
+	.team-exp{
+		margin-top: 10% !important; 
+	}
+}
+
+
+
+
+.card-caption{
+        color: #057885 !important;
+        margin-left: 10% !important;
+}
+
+.card-description{
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        margin-top: 13%;
+        font-size: 15px;
+}
+
+.voir{
+        color: #057885;
+        margin-left:10% ;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 25%;
+  width: 102%;
+  background-color: #047884;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #047884;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+position: relative;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background: #FFF;
+padding: 3px;
+}
+.card-image .card-img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ border-radius: 50%;
+border: 4px solid rgb(66, 191, 196);
+}
+.description{
+ font-size: 14px;
+color: #707070;
+text-align: center;
+}
