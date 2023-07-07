@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Nos temps forts</title>
+  <meta content="Actualité de la communauté iTeam-S" name="description">
+  <meta content="actualité, victoire iTeam-S, présentation iTeam-S" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/LOGO.png" rel="icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/card.css" rel="stylesheet">
+  <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+  <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="../assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTB7XYYMPW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YTB7XYYMPW');
+  </script>
+
+</head>
+
+<body class="body">
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xl-9 d-flex align-items-center">
+        <a href="../index.html" class="logo mr-auto"><img src="../assets/img/LOGO.png" alt="" class="img-fluid"> <span class="iteam-text-logo">iTeam-$</span></a>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="membre.html">Qui sommes-nous</a></li>
+            <li class="active" ><a href="actualite.html">Actualités</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+        <a href="../index.html#contact" class="join-btn ">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</header><!-- End Header -->
+   
+
+<!-- ======= Com Section ======= -->
+<section id="com_custom_membre" class="d-flex align-items-center">
+  <div class="bgmembre">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 style="position: relative; top: 20%;">Actualités</h1>
+          <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> Nous sommes toujours à la recherche de nouvelles idées de projets et participons à de nombreux concours.</h2>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 com-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="assets/img/hero-img_1.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Com -->
+
+
+<!-- ======= Actualités Section ======= -->
+<div class="participations">
+  <p class="under">Actualités de la communauté</p>
+  <br/>
+</div>
+
+<div id="actualite">
+  <div v-for="(actualite, index) in data">
+    <section v-if="index % 2 === 0" class="s_text_image o_colored_level pt104 pb168" data-snippet="s_text_image" data-name="Text - Image">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="pt16 pb16 col-lg-7 o_colored_level ">
+            <img v-bind:src="actualite.image" class="img img-fluid mx-auto radius" alt="" loading="lazy" data-original-id="288" data-original-src="assets/img/open.jpg" data-original-title="" title="" aria-describedby="tooltip949152">
+          </div>
+          <div class="pt16 pb16 col-lg-5 o_colored_level text-img">
+            <h2>{{ actualite.titre }}</h2>
+            <p class="text-dom">{{ actualite.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section v-if="index % 2 !== 0"  class="s_text_image o_colored_level pt104 pb168 text-img" data-snippet="s_text_image" data-name="Text - Image">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="pt16 pb16 col-lg-5 o_colored_level">
+            <h2>{{ actualite.titre }}</h2>
+            <p class="text-dom">{{ actualite.description }}</p>
+          </div>
+          <div class="pt16 pb16 col-lg-7 o_colored_level">
+            <img v-bind:src="actualite.image" class="img img-fluid mx-auto radius" alt="" loading="lazy" data-original-id="288" data-original-src="assets/img/open.jpg" data-original-title="" title="" aria-describedby="tooltip949152">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top ">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3 >iTeam-$</h3>
+          <p>
+            Ambatoroka IV17JZ<br>
+            Antananarivo<br>
+            Madagascar<br><br>
+            <strong>Téléphone:</strong> +261 34 61 780 78<br>
+            <strong>Email:</strong> contact@iteams.mg<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Liens utiles</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Accueil</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="projet.html">Projets</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="membre.html">Qui sommes-nous</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="actualite.html">Actualites</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Nos services</h4>
+          <ul>
+            <li class="our-services"><i class="bx bx-chevron-right"></i> Web scraping</li>
+            <li class="our-services"><i class="bx bx-chevron-right"></i> Développement d'application</li>
+            <li class="our-services"><i class="bx bx-chevron-right"></i> Automatisation & scripting</li>
+            <li class="our-services"><i class="bx bx-chevron-right"></i> Bot messenger</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Réjoignez notre Newsletter</h4>
+          <p>Recevoir continuellement des informations concernant la communauté</p>
+          <form>
+            <input type="email" name="email"><input type="submit" value="S'inscrire">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>iTeam-$</span></strong>. Tout droits reservés
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://web.facebook.com/iTeam.Community" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/iTeam-S" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/company/iteamscommunity" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</footer><!-- End Footer -->
+ 
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script>
+    var app = new Vue(
+    {
+      el: '#actualite',
+      data (){
+          return { data: null }
+      },
+      beforeMount(){
+        this.getData();
+      },
+      methods: {
+        async getData () {
+          const res = await fetch('https://api.iteam-s.mg/api/actualite');
+          const data = await res.json();
+          this.data = data;
+        }
+       }
+    })
+  </script>
+
+
+</body>
+
+</html>
